@@ -1,0 +1,9 @@
+<main>
+  <h1 id="recent-news">Recent News</h1>
+  <ul id="news">
+    @for(n of recentNews; track n.newsId){
+      <app-news [news]="n" [page]="home" />
+    }
+  </ul>
+</main>
+

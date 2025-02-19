@@ -1,0 +1,36 @@
+#categories-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+#categoires-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#news-list {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+  display: block; /* Inițial ascuns */
+}
+
+#news-list.active {
+  display: block;
+}
+
+/*app-news {*/
+/*  padding: 1rem;*/
+/*  border-bottom: 1px solid #ddd;*/
+/*  transition: background 0.3s;*/
+/*}*/
+
+/*app-news:hover {*/
+/*  background: #f8f9fa;*/
+/*}*/

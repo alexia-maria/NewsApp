@@ -1,0 +1,20 @@
+<h2 id="title">{{news.newsTitle}}</h2>
+
+<p id="content">{{news.newsContent}}</p>
+<p id="date">{{news.newsDate}}</p>
+
+@if(page == 'news'){
+  <button id="modify-news" (click)="onEditNews()">Edit</button>
+  <button id="delete-news" (click)="onDeleteNews()">Delete</button>
+
+  <button id="add-comment" (click)="onComment()">Add Comment</button>
+
+  <div id="comments">
+    @for(comment of comments; track comment.commentId){
+      <app-comment-details [comment]="comment" />
+    }
+  </div>
+  @if(isCommenting){
+    <app-comment [news]="news" (comment)="onClose()" (close)="onClose()" />
+  }
+}

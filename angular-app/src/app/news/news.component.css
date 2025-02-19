@@ -1,0 +1,65 @@
+/*h2#title {*/
+/*  font-size: 20px;*/
+/*  color: #1a237e;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*p#content {*/
+/*  font-size: 16px;*/
+/*  color: #444;*/
+/*  line-height: 1.6;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*p#date {*/
+/*  font-size: 14px;*/
+/*  color: #666;*/
+/*  text-align: right;*/
+/*  font-style: italic;*/
+/*}*/
+
+#title {
+  font-size: 24px;
+  color: #1a237e;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#content {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#date {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+  font-style: italic;
+}
+
+
+button {
+  background-color: #1a237e;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3949ab;
+}
+
+
+#comments {
+  max-height: 300px; /* Înălțime maximă a listei de comentarii */
+  overflow-y: auto; /* Scroll vertical activ */
+  border: 1px solid #ccc; /* Adaugă o margine discretă */
+  padding: 10px;
+  border-radius: 5px; /* Colțuri rotunjite pentru un aspect modern */
+  background-color: #f9f9f9; /* Fundal deschis pentru contrast */
+}

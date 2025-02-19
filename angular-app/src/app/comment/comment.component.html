@@ -1,0 +1,30 @@
+<div class="backdrop"></div>
+
+<dialog open>
+
+  <form>
+    <p>
+      <label for="content">Text</label>
+      <input type="text" id="content" name="content" [(ngModel)]="enteredContent"/>
+    </p>
+
+    <p>
+      <label for="user">Author</label>
+      <select id="user" name="user" [(ngModel)]="selectedUserName">
+        @for(user of users; track user.userId){
+          <option [value]="user.username">{{ user.username }}</option>
+        }
+        <option [value]="guestUsername">{{guestUsername}}</option>
+      </select>
+    </p>
+
+    <p class="actions">
+      <button (click)="onCancelCloseForm()">Cancel</button>
+      <button (click)="onComment()">Comment</button>
+    </p>
+  </form>
+</dialog>
+
+
+
+

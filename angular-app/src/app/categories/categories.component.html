@@ -1,0 +1,16 @@
+<h1 id="categories-title">
+  Categories
+</h1>
+
+<ul id="categoires-list">
+  @for(category of categories; track category.categoryId){
+    <app-category [category]="category" (view)="onViewCategory($event)"/>
+  }
+</ul>
+
+<ul id="news-list">
+  @for(n of news; track n.newsId){
+    <app-news [news]="n" />
+  }
+</ul>
+

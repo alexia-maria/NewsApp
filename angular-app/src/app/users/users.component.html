@@ -1,0 +1,10 @@
+
+<h1 id="users-title">Users</h1>
+
+<main id="users-container">
+  <ul id="users-list">
+    @for(user of users; track user.userId){
+      <app-user [user]="user" />
+    }
+  </ul>
+</main>

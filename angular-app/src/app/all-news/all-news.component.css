@@ -1,0 +1,212 @@
+
+/*#title-news {*/
+/*  font-size: 2rem;*/
+/*  font-weight: bold;*/
+/*  text-align: center;*/
+/*  margin: 20px 0;*/
+/*  color: #333;*/
+/*}*/
+
+
+/*#news-list {*/
+/*  list-style: none;*/
+/*  padding: 0;*/
+/*  max-width: 800px;*/
+/*  margin: 0 auto;*/
+/*}*/
+
+
+/*#news-list li {*/
+/*  background: #f9f9f9;*/
+/*  padding: 15px;*/
+/*  margin-bottom: 10px;*/
+/*  border-radius: 8px;*/
+/*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*  font-size: 1.2rem;*/
+/*  font-weight: 500;*/
+/*  color: #222;*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: center;*/
+/*  transition: background 0.3s ease-in-out;*/
+/*}*/
+
+
+/*#news-list li:hover {*/
+/*  background: #e3e3e3;*/
+/*}*/
+
+
+/*#read-more {*/
+/*  background: #007bff;*/
+/*  color: white;*/
+/*  border: none;*/
+/*  padding: 8px 12px;*/
+/*  font-size: 1rem;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  transition: background 0.3s;*/
+/*}*/
+
+/*#read-more:hover {*/
+/*  background: #0056b3;*/
+/*}*/
+
+
+/*.news-details {*/
+/*  max-height: 0;*/
+/*  overflow: hidden;*/
+/*  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;*/
+/*  opacity: 0;*/
+/*}*/
+
+/*.news-details.active {*/
+/*  max-height: 500px; */
+/*  opacity: 1;*/
+/*  padding: 10px;*/
+/*  background: white;*/
+/*  border-radius: 8px;*/
+/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/* Stilizare titlu pagina News */
+#title-news {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #1a237e; /* Albastru închis pentru titlu */
+  text-transform: uppercase;
+}
+
+/* Stilizare zona de căutare */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #1a237e;
+}
+
+.search-button {
+  background-color: #1a237e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #3949ab;
+}
+
+.search-button:active {
+  background-color: #303f9f;
+}
+
+
+#news-list {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+#news-list li {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+#news-list li:hover {
+  background: #e3e3e3;
+}
+
+#read-more {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#read-more:hover {
+  background: #0056b3;
+}
+
+
+.news-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.news-details.active {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+/* Stilizare buton Add News */
+#add-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#add-button {
+  background-color: #1a237e; /* Albastru închis pentru consistență */
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-button:hover {
+  background-color: #3949ab;
+}
+
+#add-button:active {
+  background-color: #303f9f;
+  transform: scale(0.95);
+}

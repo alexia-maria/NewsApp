@@ -1,0 +1,38 @@
+
+.btn-header {
+  background-color: #1a237e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-header:hover {
+  background-color: #3949ab;
+  transform: translateY(-2px);
+}
+
+.btn-header:active {
+  background-color: #303f9f;
+}
+
+
+.btn-header.active {
+  background-color: #3949ab;
+  color: white;
+}
+
+
+.header-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
